@@ -1,0 +1,138 @@
+body {
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+	background:rgba(0,0,0,0.8);
+	font-family: Quicksand;
+}
+#navbar {
+	width: 100%;
+	text-align: right;
+	height: 80px;
+	line-height: 70px;
+	background: rgba(0,0,0,0.7);
+	border-bottom: rgba(255,255,255,0.3);
+	position: sticky;
+	top: 0px;
+}
+.logo img {
+	float: left;
+	width: 70px;
+	height: auto;
+	margin-left: 40px;
+	margin-top: 2px;
+}
+.menu a {
+	text-decoration: none;
+	text-align: center;
+	padding: 5px 20px;
+	line-height: 70px;
+	font-size: 20px;
+	font-weight: bold;
+	color: #fff;
+	border-radius: 6px;
+	text-transform: capitalize;
+}
+label {
+	margin-right: 40px;
+	font-size: 40px;
+	line-height: 70px;
+	margin-top: 10px;
+	padding: 0px 10px;
+	float: right;
+	width: 25px;
+	display: none;
+}
+label i {
+	color: #fff;
+	position: relative;
+	margin-left: 10px;
+}
+#nav-toggle {
+	display: none;
+}
+.nav-img {
+	width: 100%;
+	height: 100vh;
+	background-image: url(picture.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.mytext {
+	margin-top: 40px;
+	padding: 0px 150px;
+	box-sizing: border-box;
+	height: auto;
+	text-align: justify;
+	color: #fff;
+}
+.mytext h2 {
+	font-size: 25px;
+	margin: 0px;
+	padding: 0px 0px 10px;
+	text-align: center;
+	text-transform: capitalize;
+}
+.mytext p {
+	font-size: 20px;
+}
+.menu a.active {
+	background-color: #aa1414;
+	color: #fff;
+}
+.menu a:hover:not(.active) {
+	background-color: #747474;
+	color: #fff;
+}
+
+/*--------RESPONSIVE STYLING---------------*/
+@media only screen and (max-width: 800px) {
+	#nav-bar {
+		padding-top: 10px;
+	}
+	.logo{
+		position: absolute;
+		top: 5px;
+
+	}
+	label{
+		display: block;
+		cursor: pointer;
+	}
+	.menu {
+		position: absolute;
+		width: 50%;
+		margin-left: 50%;
+		text-align: center;
+		top: 80px;
+		display: none;
+		
+		
+	}
+	.menu a {
+		display: block;
+		padding: 0px;
+		margin: 0px;
+		color: gold;
+		background-color: rgba(0,0,0,0.8);
+		border-bottom: 1.5px solid #057780;
+	}
+	#nav-toggle:checked ~ .menu {
+		display: block;
+
+	}
+	.nav-img {
+		width: 100%;
+		height: 70vh;
+	}
+	.mytext {
+		padding: 0px 60px;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.menu{
+		width: 100%;
+		margin-left: 0px;
+	}
+}
